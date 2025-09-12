@@ -12,7 +12,22 @@ Your task:
    - Extension points (filters, actions, or patterns I can reuse).
    - Any potential risks or limitations in the current implementation.
 4. Make recommendations on how I could extend or modify this file safely to add new functionality.
-5. Suggest 2–3 other files in this plugin that I should analyze next, with reasoning for why they matter.
+5. Suggest 2–3 other files in this plugin that I should analyze next, with reasoning for why they matter.  
+   - **Important**: Before suggesting files, check the repository file `completed_files.txt`.  
+   - Do **not** recommend any file paths listed in `completed_files.txt`.  
+   - Only suggest unreviewed files.
+
+Output format:
+- Write the response as a structured **Markdown (.md)** file with:
+  - A clear title and intro
+  - Sections for:
+    - High-Level Overview
+    - Detailed Explanation
+    - Features Enabled (Admin vs User)
+    - Extension Opportunities
+    - Next File Recommendations (excluding files listed in completed_files.txt)
+  - Use bulleted/numbered lists for clarity
+  - Include code snippets if useful
 
 Output format:
 - Write the response as a structured **Markdown (.md)** file with:
