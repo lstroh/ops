@@ -1,0 +1,59 @@
+You are an expert WordPress plugin developer with deep knowledge of PHP (8.2.27), MySQL (8.0.35), and WordPress (6.8.2).
+
+Your task:
+1. Analyze the implementation and purpose of the following file in this WordPress plugin repository: [FILE_PATH].
+2. Provide a high-level overview of what this file does and how it fits into the plugin’s architecture.
+3. Drill down into a more detailed explanation:
+   - Key functions, classes, or hooks used.
+   - How it interacts with WordPress core APIs or database.
+   - Any features implemented or enabled by this file for:
+     - The **WordPress Admin Menu** (e.g. new settings pages, options, meta boxes).
+     - The **User-facing side** (e.g. shortcodes, widgets, blocks, REST endpoints, front-end hooks).
+   - Extension points (filters, actions, or patterns I can reuse).
+   - Any potential risks or limitations in the current implementation.
+4. Make recommendations on how I could extend or modify this file safely to add new functionality.
+5. Suggest 2–3 other files in this plugin that I should analyze next, with reasoning for why they matter.
+
+Output format:
+- Write the response as a structured **Markdown (.md)** file with:
+  - A clear title and intro
+  - Sections for:
+    - High-Level Overview
+    - Detailed Explanation
+    - Features Enabled (Admin vs User)
+    - Extension Opportunities
+    - Next File Recommendations
+  - Use bulleted/numbered lists for clarity
+  - Include code snippets if useful
+
+Ouput example: 
+# File Analysis: [FILE_PATH]
+
+## High-Level Overview
+- Summary of the file’s role in the plugin
+- How it connects to the rest of the system
+
+## Detailed Explanation
+- Key functions and classes
+- Important hooks or WordPress APIs
+- Database or option usage
+- Example code snippets (if relevant)
+
+## Features Enabled
+### Admin Menu
+- Does this file add settings pages, admin notices, or dashboard widgets?
+- Which WordPress hooks are used?
+
+### User-Facing
+- Does this file register shortcodes, blocks, or front-end scripts/styles?
+- How does it affect site visitors?
+
+## Extension Opportunities
+- Recommended safe extension points
+- Suggested improvements or modularization ideas
+- Potential risks when extending
+
+## Next File Recommendations
+1. [fileA.php] — Reason it’s important
+2. [fileB.php] — Reason it’s important
+3. [fileC.php] — Reason it’s important
