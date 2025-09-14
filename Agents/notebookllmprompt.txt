@@ -1,0 +1,52 @@
+# Plugin Analysis Summary
+
+## File-by-File Summaries
+
+### wpdev-booking.php
+- **Role**: Main plugin entry point, registers hooks and core initialization.
+- **Key Details**: Loads constants, includes core files, registers activation/deactivation hooks.
+- **Features Enabled**
+  - **Admin**: Adds top-level menu "Booking" with settings subpages.
+  - **User**: Registers booking shortcode and enqueues front-end scripts.
+- **Extension Opportunities**: Safely extend menus with `add_submenu_page`, add new shortcode handlers, or override default booking form templates.
+
+### core/wpbc_functions.php
+- **Role**: Utility and helper functions for date and booking logic.
+- **Key Details**: Provides reusable functions for formatting, validation, and DB lookups.
+- **Features Enabled**
+  - **Admin**: None directly.
+  - **User**: Indirect — powers booking forms and availability checks.
+- **Extension Opportunities**: Add new validation helpers, extend formatting logic.
+
+### includes/page-bookings/bookings__listing.php
+- **Role**: Manages the admin booking listing table.
+- **Key Details**: Uses WP_List_Table to render bookings with filters/actions.
+- **Features Enabled**
+  - **Admin**: Provides booking management screen in dashboard.
+  - **User**: None directly.
+- **Extension Opportunities**: Add bulk actions, extend filters, or hook into row rendering.
+
+---
+
+## Common Features and Patterns
+- Heavy use of **WordPress hooks** (`add_action`, `add_filter`) for modularity.
+- Core business logic separated into `/core` utilities and `/includes/page-*` for UI screens.
+- User-facing functionality mainly exposed via **shortcodes** and **front-end assets**.
+- Admin functionality primarily provided through **custom menu pages** and WP_List_Table.
+
+---
+
+## Extension Opportunities
+- Introduce **custom REST API endpoints** for bookings (to support external integrations).
+- Add **block editor components** for booking forms (instead of just shortcodes).
+- Expand **filter/action hooks** in key files to improve customizability.
+- Implement **caching or optimization layers** around date availability functions.
+
+---
+
+## Next Files to Analyze
+1. `includes/page-settings/settings__general.php` — Defines admin configuration options for booking behavior.
+2. `core/wpbc-dates.php` — Centralized date-handling logic; critical for validation and availability checks.
+3. `includes/page-bookings/bookings__actions.php` — Handles booking actions (approve, cancel, delete); essential for workflow logic.
+
+*(Files listed in `completed_files.txt` have been excluded.)*
