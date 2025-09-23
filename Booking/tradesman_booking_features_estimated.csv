@@ -1,0 +1,47 @@
+Category,Subcategory,Feature,Dependencies,Priority,Effort (Hours),Impact,Compliance Note,Integration Options
+User Experience,Booking Flow,Online booking form with fixed + customisable service options,,Must-Have,20,High,,
+User Experience,Booking Flow,Option for clients to upload photos when booking,,Must-Have,8,High,Consent required for storing photos,
+User Experience,Booking Flow,Ability to split a job into multiple bookings,,Must-Have,4,High,,
+User Experience,Booking Flow,"Parallel booking support (e.g., consultation during long job)",,Must-Have,12,High,,
+User Experience,Loyalty & Referrals,View loyalty points and referral rewards in client portal,,Performance Driver,12,Medium,,Custom rewards engine or third-party loyalty API
+User Experience,Notifications,Automated booking confirmations and reminders,,Must-Have,8,High,,
+User Experience,Notifications,Cancellation and reschedule options for clients,,Delighter,4,Low,,
+User Experience,Messaging,Two-way client messaging (reply via SMS/email/portal),,Delighter,16,Low,,Twilio / SendGrid / WhatsApp Business API
+User Experience,Messaging,"Receive auto-updates (on the way, arrived, delayed, completed)",,Delighter,12,Low,,
+User Experience,Privacy,Right to opt out of marketing but still receive operational updates,,Performance Driver,12,Medium,,
+Admin Experience,Booking Management,"Admin dashboard for bookings, jobs, cancellations",,Must-Have,4,High,,
+Admin Experience,Booking Management,Team scheduling for up to 5 employees,,Delighter,4,Low,,
+Admin Experience,Booking Management,Add buffer time before/after bookings (travel/setup/admin),,Must-Have,16,High,,
+Admin Experience,Job Completion,"Completion form with before/after photos, comments, job status",,Delighter,12,Low,Consent required for storing photos,
+Admin Experience,Messaging,"Predefined quick client messages (On the way, Arrived, Delayed)",,Must-Have,12,High,Messaging data retention policy applies,Twilio / SendGrid / WhatsApp Business API
+Admin Experience,Messaging,Custom client messaging option,,Delighter,6,Low,,
+Admin Experience,Messaging,Automatic triggers for client messages based on booking status,,Must-Have,20,High,Messaging data retention policy applies,Twilio / SendGrid / WhatsApp Business API
+Admin Experience,Messaging,Two-way messaging hub with conversation history per booking,,Must-Have,16,High,,
+Admin Experience,Messaging,"Multi-channel messaging (SMS, email, WhatsApp if integrated)",,Delighter,16,Low,,Twilio / SendGrid / WhatsApp Business API
+Admin Experience,Messaging,Click-to-send updates via approved channels (SMS/email/etc.),,Delighter,16,Low,,Twilio / SendGrid / WhatsApp Business API
+Admin Experience,Quotes & Invoices,Convert booking into quote with one click,,Must-Have,8,High,,Xero / QuickBooks integration
+Admin Experience,Quotes & Invoices,Loyalty/referral rewards auto-applied in quotes and invoices,,Must-Have,16,High,,"Xero / QuickBooks integration, Custom rewards engine or third-party loyalty API"
+Admin Experience,Quotes & Invoices,Invoice flow with rewards displayed as line items,,Must-Have,4,High,,Xero / QuickBooks integration
+Admin Experience,Calendar & Availability,Two-way sync with Google/Outlook/Apple Calendar,,Must-Have,6,High,,Google Calendar API / Microsoft Outlook API
+Admin Experience,Calendar & Availability,Calendar conflict resolution rules,,Must-Have,4,High,,Google Calendar API / Microsoft Outlook API
+Admin Experience,Calendar & Availability,Event listeners update booking DB from external calendars,,Must-Have,16,High,,Google Calendar API / Microsoft Outlook API
+Admin Experience,CRM Integration,"CRM integration (Zoho, HubSpot free tiers)",,Delighter,8,Low,,Zoho CRM / HubSpot CRM
+Admin Experience,CRM Integration,"Customer profiles with booking history, loyalty, referrals, messages",,Must-Have,12,High,Messaging data retention policy applies,"Twilio / SendGrid / WhatsApp Business API, Custom rewards engine or third-party loyalty API"
+Admin Experience,CRM Integration,Lead → booking → job → payment pipeline in CRM,,Must-Have,4,High,,Zoho CRM / HubSpot CRM
+Admin Experience,Marketing,Marketing automation for loyalty/referral campaigns,,Performance Driver,20,Medium,,Custom rewards engine or third-party loyalty API
+Admin Experience,Loyalty & Referrals,Fraud prevention for loyalty/referrals,,Performance Driver,8,Medium,,Custom rewards engine or third-party loyalty API
+Admin Experience,Loyalty & Referrals,Analytics for rewards and referrals,,Performance Driver,6,Medium,,Custom rewards engine or third-party loyalty API
+Security,Data Protection,Encrypted booking and payment data,,Must-Have,6,High,,
+Security,Integration Security,Secure APIs for calendar and CRM integrations,,Must-Have,6,High,,"Google Calendar API / Microsoft Outlook API, Zoho CRM / HubSpot CRM"
+Security,Integration Security,OAuth authentication for external calendars,,Must-Have,6,High,,Google Calendar API / Microsoft Outlook API
+Security,Messaging Security,End-to-end encryption for two-way messaging,,Delighter,6,Low,,
+Security,Loyalty Security,Fraud detection for loyalty and referrals,,Performance Driver,6,Medium,,Custom rewards engine or third-party loyalty API
+Security,Data Protection,Access control for job photos and client communication logs,,Delighter,16,Low,Consent required for storing photos,
+Security,Audit,"Audit trail for bookings, rewards, and messaging",,Must-Have,8,High,,
+GDPR & UK Act,Consent,Explicit opt-in for loyalty and referrals,,Performance Driver,6,Medium,Requires GDPR compliance,Custom rewards engine or third-party loyalty API
+GDPR & UK Act,Consent,Consent required for storing job completion photos,,Delighter,20,Low,Requires GDPR compliance,
+GDPR & UK Act,Transparency,"Privacy notice covering bookings, photos, and messages",,Must-Have,20,High,Requires GDPR compliance,Twilio / SendGrid / WhatsApp Business API
+GDPR & UK Act,Data Rights,"Right to export or delete booking, loyalty, referral, and messaging history",,Must-Have,12,High,Requires GDPR compliance,Custom rewards engine or third-party loyalty API
+GDPR & UK Act,Calendar Privacy,Option to store personal calendar events as 'busy' only,,Must-Have,16,High,Requires GDPR compliance,Google Calendar API / Microsoft Outlook API
+GDPR & UK Act,Opt-out,Clear opt-out options for marketing communications,,Performance Driver,12,Medium,Requires GDPR compliance,
+GDPR & UK Act,Retention,Data retention policy for client messages,,Must-Have,8,High,Requires GDPR compliance,Twilio / SendGrid / WhatsApp Business API

@@ -1,3 +1,41 @@
+You are an expert WordPress plugin developer with deep knowledge of PHP (8.2.27), MySQL (8.0.35), and WordPress (6.8.2).
+
+You are given a collection of Markdown (.md) files. Each file contains an analysis of one file from a WordPress plugin. The analyses follow this structure:
+- High-Level Overview
+- Detailed Explanation
+- Features Enabled (Admin vs User)
+- Extension Opportunities
+- Next File Recommendations
+
+You are also given a file named `completed_files.txt`, which lists the files that have already been reviewed.
+
+Your task:
+1. Summarise the information across all provided `.md` files into one consolidated document.
+   - For each plugin file that was analyzed, include:
+     - A high-level summary of its role.
+     - The most important technical details (functions, hooks, DB usage).
+     - Features it enables (separating Admin and User features).
+     - Key extension opportunities.
+   - Do not repeat line-by-line explanations—focus on patterns, major points, and insights.
+2. Create a final **"Next Files to Analyze"** section.
+   - Collect all recommendations from the `.md` files.
+   - Remove duplicates.
+   - Exclude any file paths listed in `completed_files.txt`.
+   - Present a clean, ranked list of unreviewed files that should be analyzed next, with a short explanation for each.
+
+Output format:
+- Use structured Markdown with clear sections:
+  - `# Plugin Analysis Summary`
+  - `## File-by-File Summaries`
+  - `## Common Features and Patterns`
+  - `## Extension Opportunities`
+  - `## Next Files to Analyze`
+- Use bulleted or numbered lists where helpful.
+- Keep it concise but detailed enough for development planning.
+
+
+
+
 # Plugin Analysis Summary
 
 ## File-by-File Summaries
@@ -50,3 +88,46 @@
 3. `includes/page-bookings/bookings__actions.php` — Handles booking actions (approve, cancel, delete); essential for workflow logic.
 
 *(Files listed in `completed_files.txt` have been excluded.)*
+
+
+
+
+//ver 2
+
+You are an expert WordPress plugin dev (PHP 8.2.27, MySQL 8.0.35, WP 6.8.2).
+
+I uploaded:
+- Several .md files, each analyzing a plugin file (with sections: Overview, Details, Features, Extensions, Next Files).
+- completed_files.txt (list of already-reviewed files).
+
+Your tasks:
+1. **Files Included** — List all analyzed plugin file paths (from .md or inferred), exact relative paths if available.
+2. **Table of Contents** — Clickable links to each file section.
+3. **File-by-File Summaries** — For each file, use heading `### <file path>`. Show:
+   - Source MD file name
+   - Role (short sentence)
+   - Key Technical Details (hooks, DB, etc.)
+   - Features (Admin vs User)
+   - Top Extension Opportunities
+   - Suggested Next Files (from that MD)
+4. **Common Features and Patterns** — Summarize shared practices across files.
+5. **Extension Opportunities** — Consolidated list of best extension points.
+6. **Next Files to Analyze** — Aggregate all suggestions, dedupe, and exclude any in completed_files.txt. Show:
+   - Exact relative path
+   - Priority (High/Med/Low)
+   - One-line reason
+   - Which MD(s) recommended it
+7. **Excluded Recommendations** — List any that were dropped due to completed_files.txt.
+8. **Sources** — List uploaded .md file names + completed_files.txt.
+
+Format strictly in Markdown with these sections:
+# Plugin Analysis Summary
+## Files Included
+## Table of Contents
+## File-by-File Summaries
+## Common Features and Patterns
+## Extension Opportunities
+## Next Files to Analyze
+## Excluded Recommendations
+## Sources
+
