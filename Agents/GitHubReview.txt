@@ -25,18 +25,6 @@ Output format:
     - Detailed Explanation
     - Features Enabled (Admin vs User)
     - Extension Opportunities
-    - Next File Recommendations (excluding files listed in completed_files.txt)
-  - Use bulleted/numbered lists for clarity
-  - Include code snippets if useful
-
-Output format:
-- Write the response as a structured **Markdown (.md)** file with:
-  - A clear title and intro
-  - Sections for:
-    - High-Level Overview
-    - Detailed Explanation
-    - Features Enabled (Admin vs User)
-    - Extension Opportunities
     - Next File Recommendations
   - Use bulleted/numbered lists for clarity
   - Include code snippets if useful
@@ -72,3 +60,9 @@ Ouput example:
 1. [fileA.php] — Reason it’s important
 2. [fileB.php] — Reason it’s important
 3. [fileC.php] — Reason it’s important
+
+Can you update @README_NEW/completed_files.txt with the file name?
+
+can you write it to a file in @README_NEW/ and update @README_NEW/completed_files.txt with the file name?
+
+can you write it to a file in @README_NEW/ and update @README_NEW/completed_files.txt with the file name? Please also suggest the next file to review 
