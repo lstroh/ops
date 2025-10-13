@@ -63,6 +63,6 @@ Ouput example:
 
 Can you update @README_NEW/completed_files.txt with the file name?
 
-can you write it to a file in @README_NEW/ and update @README_NEW/completed_files.txt with the file name?
+can you write it to a file in @easy-appointments/README/ and update @easy-appointments/@README/completed_files.txt with the file name?
 
-can you write it to a file in @README_NEW/ and update @README_NEW/completed_files.txt with the file name? Please also suggest the next file to review 
+can you write it to a file in @easy-appointments/README/ and update @easy-appointments/README/completed_files.txt with the file name? Please also suggest the next file to review 
